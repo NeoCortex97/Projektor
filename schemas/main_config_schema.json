@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/product.schema.json",
+  "title": "Main Config",
+  "description": "The man configuration of a project management system.",
+  "type": "object",
+  "properties": {
+    "required-modules": {
+      "type": "array",
+      "title": "Plugin list",
+      "description": "A list that contains all plugins that are required to use this template."
+    },
+    "root-directory": {
+      "type": "string",
+      "title": "Base dir",
+      "description": "The base directory of the folder structure that will make your project."
+    }
+  }
+}

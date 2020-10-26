@@ -1,0 +1,37 @@
+{
+  "required-modules": [
+    "cpp-source",
+    "cpp-header",
+    "cmake-target",
+    "cmake-directories",
+    "cmake-root",
+    "clang-tidy",
+    "clang-format",
+    "conan"
+  ],
+  "root-directory": "root",
+  "stages": {
+    "creation-post": [
+      {
+        "name": "main executable",
+        "description": "Generate the CMakeList.txt for all main executables located in src.",
+        "plugin": "cmake-target",
+        "function": "generate_main_exec"
+      }
+    ],
+    "setup": [],
+    "setup-post": [],
+    "dependency-setup": [],
+    "dependency-install": [],
+    "dependency-post": [],
+    "configuration-gather": [],
+    "configuration-generate": [],
+    "build-configure": [],
+    "build-build": [],
+    "build-test": [],
+    "build-cleanup": []
+  },
+  "vcs-tasks": {
+
+  }
+}
